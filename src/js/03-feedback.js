@@ -41,7 +41,7 @@ function updateIntput() {
   if (localStorage.getItem(LOCALSTORAGE_KEY) === null) {
     return
   }
-  auditInput = JSON.parse(localStorage.getItem(LOCALSTORAGE_KEY))
+  const auditInput = JSON.parse(localStorage.getItem(LOCALSTORAGE_KEY))
   form.elements.email.value = auditInput.email;
   form.elements.message.value = auditInput.message
 }

@@ -14,8 +14,8 @@ updateIntput();
 function saveMessage(evt) {
   evt.preventDefault();
   const formData = {}
-  formData.email.value = evt.target.value;
-  formData.message.value = evt.target.value;
+  formData.email = form.elements.email.value;
+  formData.message = form.elements.message.value;
     localStorage.setItem(LOCALSTORAGE_KEY, JSON.stringify(formData));
 }
 
